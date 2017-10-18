@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://webservice.nada.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://webservice.nada.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://webservice.nada.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://webservice.nada.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This is NADA Web Service into its vehicle evaluation data.</wsdl:documentation>
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://webservice.nada.com/">
+    <s:schema elementFormDefault="qualified" targetNamespace="https://webservice.nada.com/">
       <s:element name="ping">
         <s:complexType>
           <s:sequence>
@@ -1020,7 +1020,7 @@
   <wsdl:binding name="VehicleSoap" type="tns:VehicleSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ping">
-      <soap:operation soapAction="http://webservice.nada.com/ping" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/ping" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1029,7 +1029,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getYears">
-      <soap:operation soapAction="http://webservice.nada.com/getYears" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getYears" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1038,7 +1038,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getMakes">
-      <soap:operation soapAction="http://webservice.nada.com/getMakes" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getMakes" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1047,7 +1047,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getSeries">
-      <soap:operation soapAction="http://webservice.nada.com/getSeries" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getSeries" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1056,7 +1056,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getBodyUids">
-      <soap:operation soapAction="http://webservice.nada.com/getBodyUids" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getBodyUids" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1065,7 +1065,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicles">
-      <soap:operation soapAction="http://webservice.nada.com/getVehicles" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getVehicles" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1074,7 +1074,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicle">
-      <soap:operation soapAction="http://webservice.nada.com/getVehicle" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getVehicle" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1083,7 +1083,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicleByVic">
-      <soap:operation soapAction="http://webservice.nada.com/getVehicleByVic" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getVehicleByVic" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1092,7 +1092,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getAccessories">
-      <soap:operation soapAction="http://webservice.nada.com/getAccessories" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getAccessories" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1101,7 +1101,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getInclusiveAccessories">
-      <soap:operation soapAction="http://webservice.nada.com/getInclusiveAccessories" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getInclusiveAccessories" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1110,7 +1110,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getExclusiveAccessories">
-      <soap:operation soapAction="http://webservice.nada.com/getExclusiveAccessories" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getExclusiveAccessories" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1119,7 +1119,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="validateVin">
-      <soap:operation soapAction="http://webservice.nada.com/validateVin" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/validateVin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1128,7 +1128,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getMileageAdj">
-      <soap:operation soapAction="http://webservice.nada.com/getMileageAdj" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getMileageAdj" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1137,7 +1137,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getRegions">
-      <soap:operation soapAction="http://webservice.nada.com/getRegions" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getRegions" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1146,7 +1146,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getRegionByStateCode">
-      <soap:operation soapAction="http://webservice.nada.com/getRegionByStateCode" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getRegionByStateCode" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1155,7 +1155,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getTotalAdjFloorValues">
-      <soap:operation soapAction="http://webservice.nada.com/getTotalAdjFloorValues" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getTotalAdjFloorValues" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1164,7 +1164,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicleValueByUid">
-      <soap:operation soapAction="http://webservice.nada.com/getVehicleValueByUid" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getVehicleValueByUid" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1173,7 +1173,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getBaseVehicleValueByUid">
-      <soap:operation soapAction="http://webservice.nada.com/getBaseVehicleValueByUid" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getBaseVehicleValueByUid" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1182,7 +1182,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicleAndValueByUid">
-      <soap:operation soapAction="http://webservice.nada.com/getVehicleAndValueByUid" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getVehicleAndValueByUid" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1191,7 +1191,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getDefaultVehicleAndValueByVin">
-      <soap:operation soapAction="http://webservice.nada.com/getDefaultVehicleAndValueByVin" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getDefaultVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1200,7 +1200,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getMsrpVehicleAndValueByVin">
-      <soap:operation soapAction="http://webservice.nada.com/getMsrpVehicleAndValueByVin" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getMsrpVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1209,7 +1209,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getHighVehicleAndValueByVin">
-      <soap:operation soapAction="http://webservice.nada.com/getHighVehicleAndValueByVin" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getHighVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1218,7 +1218,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getLowVehicleAndValueByVin">
-      <soap:operation soapAction="http://webservice.nada.com/getLowVehicleAndValueByVin" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getLowVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1227,7 +1227,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getAuctionValues">
-      <soap:operation soapAction="http://webservice.nada.com/getAuctionValues" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getAuctionValues" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1236,7 +1236,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getExperianAutoCheckReport">
-      <soap:operation soapAction="http://webservice.nada.com/getExperianAutoCheckReport" style="document" />
+      <soap:operation soapAction="https://webservice.nada.com/getExperianAutoCheckReport" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1248,7 +1248,7 @@
   <wsdl:binding name="VehicleSoap12" type="tns:VehicleSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ping">
-      <soap12:operation soapAction="http://webservice.nada.com/ping" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/ping" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1257,7 +1257,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getYears">
-      <soap12:operation soapAction="http://webservice.nada.com/getYears" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getYears" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1266,7 +1266,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getMakes">
-      <soap12:operation soapAction="http://webservice.nada.com/getMakes" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getMakes" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1275,7 +1275,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getSeries">
-      <soap12:operation soapAction="http://webservice.nada.com/getSeries" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getSeries" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1284,7 +1284,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getBodyUids">
-      <soap12:operation soapAction="http://webservice.nada.com/getBodyUids" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getBodyUids" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1293,7 +1293,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicles">
-      <soap12:operation soapAction="http://webservice.nada.com/getVehicles" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getVehicles" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1302,7 +1302,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicle">
-      <soap12:operation soapAction="http://webservice.nada.com/getVehicle" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getVehicle" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1311,7 +1311,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicleByVic">
-      <soap12:operation soapAction="http://webservice.nada.com/getVehicleByVic" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getVehicleByVic" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1320,7 +1320,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getAccessories">
-      <soap12:operation soapAction="http://webservice.nada.com/getAccessories" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getAccessories" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1329,7 +1329,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getInclusiveAccessories">
-      <soap12:operation soapAction="http://webservice.nada.com/getInclusiveAccessories" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getInclusiveAccessories" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1338,7 +1338,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getExclusiveAccessories">
-      <soap12:operation soapAction="http://webservice.nada.com/getExclusiveAccessories" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getExclusiveAccessories" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1347,7 +1347,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="validateVin">
-      <soap12:operation soapAction="http://webservice.nada.com/validateVin" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/validateVin" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1356,7 +1356,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getMileageAdj">
-      <soap12:operation soapAction="http://webservice.nada.com/getMileageAdj" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getMileageAdj" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1365,7 +1365,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getRegions">
-      <soap12:operation soapAction="http://webservice.nada.com/getRegions" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getRegions" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1374,7 +1374,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getRegionByStateCode">
-      <soap12:operation soapAction="http://webservice.nada.com/getRegionByStateCode" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getRegionByStateCode" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1383,7 +1383,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getTotalAdjFloorValues">
-      <soap12:operation soapAction="http://webservice.nada.com/getTotalAdjFloorValues" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getTotalAdjFloorValues" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1392,7 +1392,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicleValueByUid">
-      <soap12:operation soapAction="http://webservice.nada.com/getVehicleValueByUid" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getVehicleValueByUid" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1401,7 +1401,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getBaseVehicleValueByUid">
-      <soap12:operation soapAction="http://webservice.nada.com/getBaseVehicleValueByUid" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getBaseVehicleValueByUid" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1410,7 +1410,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getVehicleAndValueByUid">
-      <soap12:operation soapAction="http://webservice.nada.com/getVehicleAndValueByUid" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getVehicleAndValueByUid" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1419,7 +1419,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getDefaultVehicleAndValueByVin">
-      <soap12:operation soapAction="http://webservice.nada.com/getDefaultVehicleAndValueByVin" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getDefaultVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1428,7 +1428,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getMsrpVehicleAndValueByVin">
-      <soap12:operation soapAction="http://webservice.nada.com/getMsrpVehicleAndValueByVin" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getMsrpVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1437,7 +1437,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getHighVehicleAndValueByVin">
-      <soap12:operation soapAction="http://webservice.nada.com/getHighVehicleAndValueByVin" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getHighVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1446,7 +1446,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getLowVehicleAndValueByVin">
-      <soap12:operation soapAction="http://webservice.nada.com/getLowVehicleAndValueByVin" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getLowVehicleAndValueByVin" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1455,7 +1455,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getAuctionValues">
-      <soap12:operation soapAction="http://webservice.nada.com/getAuctionValues" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getAuctionValues" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1464,7 +1464,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getExperianAutoCheckReport">
-      <soap12:operation soapAction="http://webservice.nada.com/getExperianAutoCheckReport" style="document" />
+      <soap12:operation soapAction="https://webservice.nada.com/getExperianAutoCheckReport" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1476,10 +1476,10 @@
   <wsdl:service name="Vehicle">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This is NADA Web Service into its vehicle evaluation data.</wsdl:documentation>
     <wsdl:port name="VehicleSoap" binding="tns:VehicleSoap">
-      <soap:address location="http://webservice.nada.com/vehicles/Vehicle.asmx" />
+      <soap:address location="https://webservice.nada.com/vehicles/Vehicle.asmx" />
     </wsdl:port>
     <wsdl:port name="VehicleSoap12" binding="tns:VehicleSoap12">
-      <soap12:address location="http://webservice.nada.com/vehicles/Vehicle.asmx" />
+      <soap12:address location="https://webservice.nada.com/vehicles/Vehicle.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
