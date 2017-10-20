@@ -1,3 +1,5 @@
+require 'singleton'
+
 module VinData
   def self.configure(options = nil, &block)
     if !options.nil?
