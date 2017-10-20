@@ -33,13 +33,20 @@ module VinData::Services
 
       wsdl_path = File.expand_path(File.join(File.dirname(__FILE__), '../wsdls/ProdSecureLogin.wsdl'))
       # do auth login to get token
+      ssl_cert = File.join(__dir__, '../nada_certs/TrustedRoot.pem')
+      ssl_cert_key = File.join(__dir__, '../nada_certs/Nada_com.pem')
+      ssl_ca_cert = File.join(__dir__, '../nada_certs/DigiCertCA.pem')
       client = Savon.client(
         wsdl: wsdl_path,
         raise_errors: true,
         log_level: :info,
         pretty_print_xml: true,
         env_namespace: :soap,
-        namespace_identifier: :web
+        namespace_identifier: :web,
+        ssl_version: :SSLv2,
+        ssl_cert_file: File.open(ssl_cert),
+        ssl_cert_key_file:  File.open(ssl_cert_key),
+        ssl_ca_cert_file: File.open(ssl_ca_cert)
       )
       data = client.call(:get_token,
                          message: { 'tokenRequest' =>
@@ -57,13 +64,20 @@ module VinData::Services
                                     '../wsdls/ProdVehicle.wsdl')
                                   )
       # do auth login to get token
+      ssl_cert = File.join(__dir__, '../nada_certs/TrustedRoot.pem')
+      ssl_cert_key = File.join(__dir__, '../nada_certs/Nada_com.pem')
+      ssl_ca_cert = File.join(__dir__, '../nada_certs/DigiCertCA.pem')
       client = Savon.client(
         wsdl: wsdl_path,
         raise_errors: true,
         log_level: :info,
         pretty_print_xml: true,
         env_namespace: :soap,
-        namespace_identifier: :web
+        namespace_identifier: :web,
+        ssl_version: :SSLv2,
+        ssl_cert_file: File.open(ssl_cert),
+        ssl_cert_key_file:  File.open(ssl_cert_key),
+        ssl_ca_cert_file: File.open(ssl_ca_cert)
       )
       client
     end
