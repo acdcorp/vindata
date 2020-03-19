@@ -20,4 +20,14 @@ module VinData
     service = Services.get service
     service.recalls data
   end
+
+  def self.get_acv_rest(data, service = config[:service])
+    service = Services.get service
+    service.get_acv data
+  end
+
+  def self.get_region_by_state(state_code, service = config[:service])
+    service = Services.get service
+    service.get_region_id_by_state state_code
+  end
 end

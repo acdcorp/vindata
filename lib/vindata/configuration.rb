@@ -16,7 +16,8 @@ module VinData
 
     OPTIONS = [
       :service,
-      :api_key
+      :api_key,
+      :api_url
     ]
 
     attr_accessor :data
@@ -49,6 +50,7 @@ module VinData
       # geocoding options
       @data[:service]      = :edmunds    # Default service to look up vins with
       @data[:api_key]      = nil         # API key for geocoding service
+      @data[:api_url]      = nil         # API url
 
     end
 
