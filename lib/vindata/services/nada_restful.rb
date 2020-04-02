@@ -61,6 +61,7 @@ module VinData::Services
     end
 
     def get_region_id_by_state(state_code)
+      tries = 2
       client  = get_client('regionIdByStateCode')
       payload = { params: { statecode: state_code} }
       payload = payload.merge(headers)
