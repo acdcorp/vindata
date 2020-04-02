@@ -6,7 +6,8 @@ module VinData
     def service_list
       [
         :edmunds,
-        :nada
+        :nada,
+        :nada_restful
       ]
     end
 
